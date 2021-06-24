@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_nlu_entity">
+    <sys_nlu_entity action="INSERT_OR_UPDATE">
+        <base_entity/>
+        <confidence_threshold>0.6</confidence_threshold>
+        <field_name/>
+        <lookup/>
+        <model display_value="va_ita2">6421d33b2f3430109d70b8e72799b60c</model>
+        <name>citrix</name>
+        <override_confidence_threshold>false</override_confidence_threshold>
+        <parent/>
+        <sys_class_name>sys_nlu_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 15:08:52</sys_created_on>
+        <sys_id>2e5c23bf2f7430109d70b8e72799b642</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>citrix</sys_name>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_update_name>sys_nlu_entity_2e5c23bf2f7430109d70b8e72799b642</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 15:08:52</sys_updated_on>
+        <table/>
+        <type>simple</type>
+        <values_list/>
+    </sys_nlu_entity>
+</record_update>

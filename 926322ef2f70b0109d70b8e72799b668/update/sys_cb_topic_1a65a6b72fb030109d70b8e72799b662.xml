@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <auto_resolution_enabled>false</auto_resolution_enabled>
+        <category>19b3ee632fb0b0109d70b8e72799b6fc</category>
+        <channels/>
+        <connect_queue/>
+        <description>problemi con lo scanner</description>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.31",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "63de68ffdeb046249f01631317c4ee72": {
+          "id": "63de68ffdeb046249f01631317c4ee72",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Ho capito che hai problemi con lo scanner"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "f5c44b1a9278488a85d74a0433a88c6e": {
+          "id": "f5c44b1a9278488a85d74a0433a88c6e",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "3c8294c898d141b1a2eec8d666687716": {
+          "stepType": "CarouselPrompt",
+          "name": "model_id",
+          "prompt": {
+            "value": "",
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "528b7a1ed8e1423b818c8bfdbd3770cb",
+          "id": "3c8294c898d141b1a2eec8d666687716",
+          "carouselLabel": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Selezionare il modello di scanner"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "carouselItemExpression": "(function execute() {\n    /* Code your script logic here.  When defining your enumeration list in javascript\n       ensure that you assign keys of Name, Description, Value, and Body. For example:\n\n       var options = [];\n       options.push(\n            {\n                'Name': 'name1',\n                'Value': 'value_1',\n                'Description': 'a description of value_1 item',\n                'Body': 'https://somehost/somepath/somepic1.jpg'\n            }\n       );\n       options.push(\n            {\n                'Name': 'name2',\n                'Value': 'value_2',\n                'Description': 'a description of value_2 item',\n                'Body': 'https://somehost/somepath/somepic2.jpg'\n            }\n       );\n       return options;\n    */\n\n    var options = []; // add options here...\n           options.push(\n            {\n                'Name': 'Scanner Epson',\n                'Value': 'epson',\n                'Description': 'Scanner Epson Perfection v19',\n                'Body': 'file:///C:/Users/StefanoRobustelli/Documents/Formazione/ServiceNow/scanner1.jpg'\n            }\n       );\n                  options.push(\n            {\n                'Name': 'Scanner HP',\n                'Value': 'hp',\n                'Description': 'Scanner HP Perfection v21',\n                'Body': 'file:///C:/Users/StefanoRobustelli/Documents/Formazione/ServiceNow/scanner1.jpg'\n            }\n       );\n    return options;\n})()\n",
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "OK"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        }
+      },
+      "edges": [
+        {
+          "id": "c69c568bb6a64149a89e24ec8d40b444",
+          "edgeType": "Edge",
+          "source": "63de68ffdeb046249f01631317c4ee72",
+          "target": "3c8294c898d141b1a2eec8d666687716",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "7562936967a84d4b9e8233daaa87f74b",
+          "edgeType": "Edge",
+          "source": "3c8294c898d141b1a2eec8d666687716",
+          "target": "f5c44b1a9278488a85d74a0433a88c6e",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "c0e82d22bcf0470886225a6346f1bd9a": {
+      "id": "c0e82d22bcf0470886225a6346f1bd9a",
+      "name": "LiveAgent_application",
+      "value": {
+        "mode": "simple",
+        "value": ""
+      },
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "528b7a1ed8e1423b818c8bfdbd3770cb": {
+      "id": "528b7a1ed8e1423b818c8bfdbd3770cb",
+      "name": "model_id",
+      "label": "Model_id",
+      "varType": "carousel-image",
+      "category": "vaInputs"
+    }
+  }
+}</graph>
+        <key_phrases>scanner</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>scanner</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <roles/>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 09:58:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1a65a6b72fb030109d70b8e72799b662</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>scanner</sys_name>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_update_name>sys_cb_topic_1a65a6b72fb030109d70b8e72799b662</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 10:25:57</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=1a65a6b72fb030109d70b8e72799b662"/>
+</record_update>

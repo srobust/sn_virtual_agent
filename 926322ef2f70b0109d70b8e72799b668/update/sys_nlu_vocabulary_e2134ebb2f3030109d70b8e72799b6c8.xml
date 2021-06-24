@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_nlu_vocabulary">
+    <sys_nlu_vocabulary action="INSERT_OR_UPDATE">
+        <field_name/>
+        <filter_condition/>
+        <model/>
+        <name>system</name>
+        <pattern/>
+        <related_terms>sistemi Vodafone</related_terms>
+        <solution_name/>
+        <sys_class_name>sys_nlu_vocabulary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 07:29:01</sys_created_on>
+        <sys_id>e2134ebb2f3030109d70b8e72799b6c8</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>system</sys_name>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_update_name>sys_nlu_vocabulary_e2134ebb2f3030109d70b8e72799b6c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 07:33:18</sys_updated_on>
+        <table/>
+        <type>static_lookup</type>
+        <vocabulary_json>{"options":{"enable_fuzzy_matching":true,"case_sensitive":false,"language":"it"},"values":[{"actual":"dealer station","synonyms":"ds, dealer"},{"actual":"citrix","synonyms":""},{"actual":"bsales","synonyms":"b sales, b-sales, bales, bisales"}]}</vocabulary_json>
+    </sys_nlu_vocabulary>
+</record_update>

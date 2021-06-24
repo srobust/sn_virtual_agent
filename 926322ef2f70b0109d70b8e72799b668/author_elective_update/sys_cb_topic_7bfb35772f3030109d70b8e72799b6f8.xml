@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="DELETE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <auto_resolution_enabled>false</auto_resolution_enabled>
+        <category>19b3ee632fb0b0109d70b8e72799b6fc</category>
+        <channels/>
+        <connect_queue/>
+        <description>user needs a reset password on specific system</description>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{"graph_api_version":"1.0.31","variables":{"a614f26ccb5f4c3abf5ec9cc9705d56e":{"id":"a614f26ccb5f4c3abf5ec9cc9705d56e","name":"LiveAgent_application","value":{"mode":"simple","value":""},"varType":"script","category":"vaVars"},"441cb20c7f6c48d790e12b349d04f46c":{"category":"vaInputs","id":"441cb20c7f6c48d790e12b349d04f46c","label":"User","name":"user","table":"sys_user","varType":"reference"},"9fa3d3840eaf4f95ac2f3bd5985919b2":{"id":"9fa3d3840eaf4f95ac2f3bd5985919b2","name":"system","label":"System","varType":"choice","choices":[{"label":"Dealer Station","value":"Dealer Station"},{"label":"Citrix","value":"Citrix","checked":true},{"label":"BSales","value":"BSales","checked":true}],"category":"vaInputs"}},"goals":{"primary":{"id":"primary","trigger":{"type":"primary"},"name":"primary","applicability":"","description":"","nodes":{"3f4fa9022fb343ceb2a3d743b109de1b":{"id":"3f4fa9022fb343ceb2a3d743b109de1b","stepType":"Start","name":"Start","greetingResponse":{"value":[{"type":"paragraph","children":[{"text":"Ho capito che necessiti di un reset password"}]}],"mode":"simple"}},"525e93f989504f28a60a1508d4ea80b0":{"id":"525e93f989504f28a60a1508d4ea80b0","stepType":"TerminateGoal","name":"End","confirmationMessage":{"value":"(function execute() {\n    /* Return a quoted string.  For example:\n\n       if (vaInputs.first_name == 'Bill') {\n           return gs.getMessage('hi there {0}', [vaInputs.first_name]);\n       } else {\n           return gs.getMessage('how are you {0}', [vaInputs.last_name]);\n       }\n    */\n    return gs.getMessage('Ok, procedo con il reset password per il sistema {0}, utente {1}', [vaInputs.system], [vaInputs.user]);\n})()\n","mode":"script"}},"a92a5caae3844c4f9950cddd2c5dd3f8":{"stepType":"ChoicePrompt","name":"system","prompt":{"value":[{"type":"paragraph","children":[{"text":"Su quale sistema riscontri il problema di accesso?"}]}],"mode":"simple"},"confirmMessage":{"value":"","mode":"simple"},"acknowledgeMsg":{"value":"","mode":"simple"},"applicability":{"value":"","mode":"query"},"skippable":{"value":"","mode":"query"},"defaultValue":{"value":"","mode":"simple"},"variableId":"9fa3d3840eaf4f95ac2f3bd5985919b2","id":"a92a5caae3844c4f9950cddd2c5dd3f8","withNluUserInput":false,"skipIfFulfilled":false}},"edges":[{"id":"41c83d40ec414a8a823f089c43688d30","edgeType":"Edge","source":"a92a5caae3844c4f9950cddd2c5dd3f8","target":"525e93f989504f28a60a1508d4ea80b0","sourcePort":"","targetPort":""},{"id":"26bcbe93f13340dba2b6752f741d5503","edgeType":"Edge","source":"3f4fa9022fb343ceb2a3d743b109de1b","target":"a92a5caae3844c4f9950cddd2c5dd3f8","sourcePort":"","targetPort":""}]}}}</graph>
+        <key_phrases>Reset Password 1,Reset Password,non accedo,nessun accesso,mancato accesso,pw,psw,reset pass,cambio password,nuova password,pwd,credenziali errate,credenziali non valide,non riconosce password,impossibile accedere</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>Reset Password 1</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <roles/>
+        <source_topic_id>b20866a72fb0b0109d70b8e72799b65f</source_topic_id>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 06:57:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7bfb35772f3030109d70b8e72799b6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reset Password 1</sys_name>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_update_name>sys_cb_topic_7bfb35772f3030109d70b8e72799b6f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 06:57:58</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="DELETE" query="document_key=7bfb35772f3030109d70b8e72799b6f8"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</application>
+        <file_path/>
+        <instance_id>146db324db0ad7c0536ad5b0cf961985</instance_id>
+        <instance_name>dev58906</instance_name>
+        <name>sys_cb_topic_7bfb35772f3030109d70b8e72799b6f8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic"><sys_cb_topic action="INSERT_OR_UPDATE"><applicability/><applicability_mode>query</applicability_mode><auto_resolution_enabled>false</auto_resolution_enabled><category>19b3ee632fb0b0109d70b8e72799b6fc</category><channels/><connect_queue/><description>user needs a reset password on specific system</description><flexible_conversation_switching>false</flexible_conversation_switching><graph>{"graph_api_version":"1.0.31","variables":{"a614f26ccb5f4c3abf5ec9cc9705d56e":{"id":"a614f26ccb5f4c3abf5ec9cc9705d56e","name":"LiveAgent_application","value":{"mode":"simple","value":""},"varType":"script","category":"vaVars"},"441cb20c7f6c48d790e12b349d04f46c":{"category":"vaInputs","id":"441cb20c7f6c48d790e12b349d04f46c","label":"User","name":"user","table":"sys_user","varType":"reference"},"9fa3d3840eaf4f95ac2f3bd5985919b2":{"id":"9fa3d3840eaf4f95ac2f3bd5985919b2","name":"system","label":"System","varType":"choice","choices":[{"label":"Dealer Station","value":"Dealer Station"},{"label":"Citrix","value":"Citrix","checked":true},{"label":"BSales","value":"BSales","checked":true}],"category":"vaInputs"}},"goals":{"primary":{"id":"primary","trigger":{"type":"primary"},"name":"primary","applicability":"","description":"","nodes":{"3f4fa9022fb343ceb2a3d743b109de1b":{"id":"3f4fa9022fb343ceb2a3d743b109de1b","stepType":"Start","name":"Start","greetingResponse":{"value":[{"type":"paragraph","children":[{"text":"Ho capito che necessiti di un reset password"}]}],"mode":"simple"}},"525e93f989504f28a60a1508d4ea80b0":{"id":"525e93f989504f28a60a1508d4ea80b0","stepType":"TerminateGoal","name":"End","confirmationMessage":{"value":"(function execute() {\n    /* Return a quoted string.  For example:\n\n       if (vaInputs.first_name == 'Bill') {\n           return gs.getMessage('hi there {0}', [vaInputs.first_name]);\n       } else {\n           return gs.getMessage('how are you {0}', [vaInputs.last_name]);\n       }\n    */\n    return gs.getMessage('Ok, procedo con il reset password per il sistema {0}, utente {1}', [vaInputs.system], [vaInputs.user]);\n})()\n","mode":"script"}},"a92a5caae3844c4f9950cddd2c5dd3f8":{"stepType":"ChoicePrompt","name":"system","prompt":{"value":[{"type":"paragraph","children":[{"text":"Su quale sistema riscontri il problema di accesso?"}]}],"mode":"simple"},"confirmMessage":{"value":"","mode":"simple"},"acknowledgeMsg":{"value":"","mode":"simple"},"applicability":{"value":"","mode":"query"},"skippable":{"value":"","mode":"query"},"defaultValue":{"value":"","mode":"simple"},"variableId":"9fa3d3840eaf4f95ac2f3bd5985919b2","id":"a92a5caae3844c4f9950cddd2c5dd3f8","withNluUserInput":false,"skipIfFulfilled":false}},"edges":[{"id":"41c83d40ec414a8a823f089c43688d30","edgeType":"Edge","source":"a92a5caae3844c4f9950cddd2c5dd3f8","target":"525e93f989504f28a60a1508d4ea80b0","sourcePort":"","targetPort":""},{"id":"26bcbe93f13340dba2b6752f741d5503","edgeType":"Edge","source":"3f4fa9022fb343ceb2a3d743b109de1b","target":"a92a5caae3844c4f9950cddd2c5dd3f8","sourcePort":"","targetPort":""}]}}}</graph><key_phrases>Reset Password 1,Reset Password,non accedo,nessun accesso,mancato accesso,pw,psw,reset pass,cambio password,nuova password,pwd,credenziali errate,credenziali non valide,non riconosce password,impossibile accedere</key_phrases><library>false</library><live_agent>false</live_agent><name>Reset Password 1</name><nlu_intent/><nlu_intent_label/><nlu_model/><nlu_model_label/><nlu_provider/><roles/><source_topic_id>b20866a72fb0b0109d70b8e72799b65f</source_topic_id><sys_class_name>sys_cb_topic</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-24 06:57:58</sys_created_on><sys_domain>global</sys_domain><sys_id>7bfb35772f3030109d70b8e72799b6f8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Reset Password 1</sys_name><sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package><sys_policy/><sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope><sys_update_name>sys_cb_topic_7bfb35772f3030109d70b8e72799b6f8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-24 06:57:58</sys_updated_on><triggerable_by_notification>false</triggerable_by_notification><type>STANDARD</type><variables/></sys_cb_topic><sys_variable_value action="delete_multiple" query="document_key=7bfb35772f3030109d70b8e72799b6f8"/></record_update>]]></payload>
+        <payload_hash>740680131</payload_hash>
+        <record_name>Reset Password 1</record_name>
+        <reverted_from/>
+        <source>1a6322ef2f70b0109d70b8e72799b66a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 06:58:00</sys_created_on>
+        <sys_id>4c0c35f72f3030109d70b8e72799b6cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a3ccfa9ae0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 06:58:00</sys_updated_on>
+        <type>Topic</type>
+        <update_guid>840c35f7673030108467eff7b8a04ecf</update_guid>
+        <update_guid_history>840c35f7673030108467eff7b8a04ecf:740680131</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 06:59:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_cb_topic">sys_cb_topic</sys_db_object>
+        <sys_id>6051c18d9f5e4de895ef0ee4a3d72710</sys_id>
+        <sys_metadata>7bfb35772f3030109d70b8e72799b6f8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reset Password 1</sys_name>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_scope_delete display_value="">81791ef8ac214bce8dbc3e3d28a64964</sys_scope_delete>
+        <sys_update_name>sys_cb_topic_7bfb35772f3030109d70b8e72799b6f8</sys_update_name>
+        <sys_update_version display_value="sys_cb_topic_7bfb35772f3030109d70b8e72799b6f8">4c0c35f72f3030109d70b8e72799b6cf</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 06:59:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_nlu_vocabulary">
+    <sys_nlu_vocabulary action="INSERT_OR_UPDATE">
+        <field_name/>
+        <filter_condition/>
+        <model display_value="va_ita2">6421d33b2f3430109d70b8e72799b60c</model>
+        <name>dealer station</name>
+        <pattern/>
+        <related_terms>dealer,ds</related_terms>
+        <solution_name/>
+        <sys_class_name>sys_nlu_vocabulary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 15:05:17</sys_created_on>
+        <sys_id>5e8beb3f2f7430109d70b8e72799b6be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dealer station</sys_name>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_update_name>sys_nlu_vocabulary_5e8beb3f2f7430109d70b8e72799b6be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 15:05:17</sys_updated_on>
+        <table/>
+        <type>regular</type>
+        <vocabulary_json/>
+    </sys_nlu_vocabulary>
+</record_update>

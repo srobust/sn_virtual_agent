@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <auto_resolution_enabled>false</auto_resolution_enabled>
+        <category>19b3ee632fb0b0109d70b8e72799b6fc</category>
+        <channels/>
+        <connect_queue/>
+        <description>problemi con il pos</description>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.31",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "beb9ba7070e44fe48c283a3de95cd72b": {
+          "id": "beb9ba7070e44fe48c283a3de95cd72b",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Ho capito che hai problemi con il pos"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "f469a9773a714bc29c3a1c6f47dc81be": {
+          "id": "f469a9773a714bc29c3a1c6f47dc81be",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": "(function execute() {\n    /* Return a quoted string.  For example:\n\n       if (vaInputs.first_name == 'Bill') {\n           return gs.getMessage('hi there {0}', [vaInputs.first_name]);\n       } else {\n           return gs.getMessage('how are you {0}', [vaInputs.last_name]);\n       }\n    */\n    return gs.getMessage('OK, apro un ticket per sostituire il pos {0}', [vaInputs.terminal_id]);\n})()\n",
+            "mode": "script"
+          }
+        },
+        "914bcbf038f94a4ea20b41b1cb60b125": {
+          "id": "914bcbf038f94a4ea20b41b1cb60b125",
+          "stepType": "Prompt",
+          "name": "terminal_id",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Scrivi il codice del pos"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "ec6c270d5a584317b2c8fa30312aec89",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "b1cb49d0774c4aaea3496abd832b1b9f": {
+          "id": "b1cb49d0774c4aaea3496abd832b1b9f",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "37ded155913849b8a34120b20e2458f4": {
+          "id": "37ded155913849b8a34120b20e2458f4",
+          "stepType": "TextOutput",
+          "name": "terminal_id non corretto",
+          "secure": false,
+          "value": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Il codice terminale non e' corretto. Riprova"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "9f372b7007eb46879b3bf1cf59a4b2c2",
+          "edgeType": "Edge",
+          "source": "beb9ba7070e44fe48c283a3de95cd72b",
+          "target": "914bcbf038f94a4ea20b41b1cb60b125",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "8f4ccf17118d420e973460e51551f951",
+          "edgeType": "Edge",
+          "source": "914bcbf038f94a4ea20b41b1cb60b125",
+          "target": "b1cb49d0774c4aaea3496abd832b1b9f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "87970fb908ee4261b21a9d30102ba14a",
+          "edgeType": "Branch",
+          "source": "b1cb49d0774c4aaea3496abd832b1b9f",
+          "target": "f469a9773a714bc29c3a1c6f47dc81be",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "script",
+            "value": "(function execute() {\n    /* Return true or false to indicate the branch condition's applicability.\n       For example:\n\n       var applies = vaInputs.first_name == 'Bill' ? true : false;\n       return applies;\n    */\n    var tid = vaInputs.terminal_id.getValue();\n        if (tid.length == 8 &amp;&amp; !isNaN(tid)){\n            return true;\n        }\n        else {\n            return false;\n        }\n})()\n"
+          },
+          "label": "terminal_id corretto"
+        },
+        {
+          "id": "076b9f21c0fb45c2b861ef39f8d5f3ce",
+          "edgeType": "Branch",
+          "source": "b1cb49d0774c4aaea3496abd832b1b9f",
+          "target": "37ded155913849b8a34120b20e2458f4",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "script",
+            "value": "(function execute() {\n    /* Return true or false to indicate the branch condition's applicability.\n       For example:\n\n       var applies = vaInputs.first_name == 'Bill' ? true : false;\n       return applies;\n    */\n    var tid = vaInputs.terminal_id.getValue();\n        if (tid.length != 8 || isNaN(tid)){\n            return true;\n        }\n        else {\n            return false;\n        }\n    \n})()\n"
+          },
+          "label": "terminal_id non corretto"
+        },
+        {
+          "id": "6f7ed867116c46d0bdbaa229811b022b",
+          "edgeType": "Edge",
+          "source": "37ded155913849b8a34120b20e2458f4",
+          "target": "914bcbf038f94a4ea20b41b1cb60b125",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "83af2b88bd5640109758432d4757562a": {
+      "id": "83af2b88bd5640109758432d4757562a",
+      "name": "LiveAgent_application",
+      "value": {
+        "mode": "simple",
+        "value": ""
+      },
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "ec6c270d5a584317b2c8fa30312aec89": {
+      "id": "ec6c270d5a584317b2c8fa30312aec89",
+      "name": "terminal_id",
+      "label": "Terminal_id",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTYyNDUyNTgxNTAxNyBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    }
+  }
+}</graph>
+        <key_phrases>Pos</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>Pos</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <roles/>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 09:06:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>cf69defb2f7030109d70b8e72799b6de</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Pos</sys_name>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_update_name>sys_cb_topic_cf69defb2f7030109d70b8e72799b6de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 09:51:27</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=cf69defb2f7030109d70b8e72799b6de"/>
+</record_update>

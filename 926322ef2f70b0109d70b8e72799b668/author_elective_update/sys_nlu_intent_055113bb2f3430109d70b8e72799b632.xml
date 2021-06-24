@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_nlu_intent">
+    <sys_nlu_intent action="DELETE">
+        <confidence_threshold>0.65</confidence_threshold>
+        <description>This intent is for the Change Password VA topic.</description>
+        <model display_value="va_ita2">6421d33b2f3430109d70b8e72799b60c</model>
+        <name>ChangePassword</name>
+        <origin display_value="ChangePassword">2ecd6a8f538220107cb0ddeeff7b12ed</origin>
+        <override_confidence_threshold>false</override_confidence_threshold>
+        <sys_class_name>sys_nlu_intent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 13:10:48</sys_created_on>
+        <sys_id>055113bb2f3430109d70b8e72799b632</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ChangePassword</sys_name>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_update_name>sys_nlu_intent_055113bb2f3430109d70b8e72799b632</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 13:10:48</sys_updated_on>
+    </sys_nlu_intent>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</application>
+        <file_path/>
+        <instance_id>146db324db0ad7c0536ad5b0cf961985</instance_id>
+        <instance_name>dev58906</instance_name>
+        <name>sys_nlu_intent_055113bb2f3430109d70b8e72799b632</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_nlu_intent"><sys_nlu_intent action="INSERT_OR_UPDATE"><confidence_threshold>0.65</confidence_threshold><description>This intent is for the Change Password VA topic.</description><model display_value="va_ita2">6421d33b2f3430109d70b8e72799b60c</model><name>ChangePassword</name><origin display_value="ChangePassword">2ecd6a8f538220107cb0ddeeff7b12ed</origin><override_confidence_threshold>false</override_confidence_threshold><sys_class_name>sys_nlu_intent</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-24 13:10:48</sys_created_on><sys_id>055113bb2f3430109d70b8e72799b632</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ChangePassword</sys_name><sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package><sys_policy/><sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope><sys_update_name>sys_nlu_intent_055113bb2f3430109d70b8e72799b632</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-24 13:10:48</sys_updated_on></sys_nlu_intent></record_update>]]></payload>
+        <payload_hash>-1314985818</payload_hash>
+        <record_name>ChangePassword</record_name>
+        <reverted_from/>
+        <source>1a6322ef2f70b0109d70b8e72799b66a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 13:10:48</sys_created_on>
+        <sys_id>0d5113bb2f3430109d70b8e72799b634</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a3e24fa130000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 13:10:48</sys_updated_on>
+        <type>NLU Intent</type>
+        <update_guid>455113bb51343010cefc2aed57c68c34</update_guid>
+        <update_guid_history>455113bb51343010cefc2aed57c68c34:-1314985818</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 13:16:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_nlu_intent">sys_nlu_intent</sys_db_object>
+        <sys_id>31e94f5ddc694b5cab4f836e531a6e04</sys_id>
+        <sys_metadata>055113bb2f3430109d70b8e72799b632</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ChangePassword</sys_name>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_scope_delete display_value="">81791ef8ac214bce8dbc3e3d28a64964</sys_scope_delete>
+        <sys_update_name>sys_nlu_intent_055113bb2f3430109d70b8e72799b632</sys_update_name>
+        <sys_update_version display_value="sys_nlu_intent_055113bb2f3430109d70b8e72799b632">0d5113bb2f3430109d70b8e72799b634</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 13:16:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

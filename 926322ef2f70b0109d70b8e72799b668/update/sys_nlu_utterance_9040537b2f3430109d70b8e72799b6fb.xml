@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_nlu_utterance">
+    <sys_nlu_utterance action="INSERT_OR_UPDATE">
+        <intent display_value="ResetPwd">fb30537b2f3430109d70b8e72799b68b</intent>
+        <sys_class_name>sys_nlu_utterance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 13:06:06</sys_created_on>
+        <sys_id>9040537b2f3430109d70b8e72799b6fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>abbiamo problemi con l'accesso ai sistemi, non riconosce le credenziali</sys_name>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_update_name>sys_nlu_utterance_9040537b2f3430109d70b8e72799b6fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 13:06:06</sys_updated_on>
+        <utterance>abbiamo problemi con l'accesso ai sistemi, non riconosce le credenziali</utterance>
+    </sys_nlu_utterance>
+</record_update>
