@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="scanner_va" max_length="40" name="x_656484_virtual_a_scanner" type="collection">
+        <element display="true" label="immagine" max_length="40" name="immagine" type="file_attachment"/>
+        <element label="modello" max_length="50" name="model_id" type="string"/>
+    </element>
+</database>

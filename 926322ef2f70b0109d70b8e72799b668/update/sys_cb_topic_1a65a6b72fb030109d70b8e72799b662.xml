@@ -43,8 +43,8 @@
           "stepType": "TerminateGoal",
           "name": "End",
           "confirmationMessage": {
-            "mode": "simple",
-            "value": ""
+            "value": "(function execute() {\n    /* Return a quoted string.  For example:\n\n       if (vaInputs.first_name == 'Bill') {\n           return gs.getMessage('hi there {0}', [vaInputs.first_name]);\n       } else {\n           return gs.getMessage('how are you {0}', [vaInputs.last_name]);\n       }\n    */\n    return gs.getMessage('OK, apro un ticket al tecnico per la riparazione dello scanner modello {0}', [vaInputs.model_id]);\n})()\n",
+            "mode": "script"
           }
         },
         "3c8294c898d141b1a2eec8d666687716": {
@@ -89,7 +89,7 @@
             ],
             "mode": "simple"
           },
-          "carouselItemExpression": "(function execute() {\n    /* Code your script logic here.  When defining your enumeration list in javascript\n       ensure that you assign keys of Name, Description, Value, and Body. For example:\n\n       var options = [];\n       options.push(\n            {\n                'Name': 'name1',\n                'Value': 'value_1',\n                'Description': 'a description of value_1 item',\n                'Body': 'https://somehost/somepath/somepic1.jpg'\n            }\n       );\n       options.push(\n            {\n                'Name': 'name2',\n                'Value': 'value_2',\n                'Description': 'a description of value_2 item',\n                'Body': 'https://somehost/somepath/somepic2.jpg'\n            }\n       );\n       return options;\n    */\n\n    var options = []; // add options here...\n           options.push(\n            {\n                'Name': 'Scanner Epson',\n                'Value': 'epson',\n                'Description': 'Scanner Epson Perfection v19',\n                'Body': 'file:///C:/Users/StefanoRobustelli/Documents/Formazione/ServiceNow/scanner1.jpg'\n            }\n       );\n                  options.push(\n            {\n                'Name': 'Scanner HP',\n                'Value': 'hp',\n                'Description': 'Scanner HP Perfection v21',\n                'Body': 'file:///C:/Users/StefanoRobustelli/Documents/Formazione/ServiceNow/scanner1.jpg'\n            }\n       );\n    return options;\n})()\n",
+          "carouselItemExpression": "(function execute() {\n    /* Code your script logic here.  When defining your enumeration list in javascript\n       ensure that you assign keys of Name, Description, Value, and Body. For example:\n    */\n\n    var options = []; // add options here...\n           options.push(\n            {\n                'Name': 'Epson Perfection V600',\n                'Value': 'Epson Perfection V600',\n                'Description': 'Scanner Epson Perfection V600',\n                'Body': 'https://dev58906.service-now.com/sys_attachment.do?sys_id=c3b324d02f4130109d70b8e72799b671'\n            }\n       );\n                  options.push(\n            {\n                'Name': 'Canon DR-C230',\n                'Value': 'Canon DR-C230',\n                'Description': 'Scanner Canon DR-C230',\n                'Body': 'https://dev58906.service-now.com/sys_attachment.do?sys_id=ee00381c2f4130109d70b8e72799b69d'\n            }\n        );\n                  options.push(\n            {\n                'Name': 'Kodak E1025',\n                'Value': 'Kodak E1025',\n                'Description': 'Scanner Kodak E1025',\n                'Body': 'https://dev58906.service-now.com/sys_attachment.do?sys_id=7b15ecd02f4130109d70b8e72799b66c'\n            }\n       );\n    return options;\n})()\n",
           "noRecordsResponseMsg": {
             "value": [
               {
@@ -171,14 +171,14 @@
         <sys_created_on>2021-06-24 09:58:55</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>1a65a6b72fb030109d70b8e72799b662</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>scanner</sys_name>
         <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
         <sys_policy/>
         <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
         <sys_update_name>sys_cb_topic_1a65a6b72fb030109d70b8e72799b662</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-24 10:25:57</sys_updated_on>
+        <sys_updated_on>2021-06-25 15:05:19</sys_updated_on>
         <triggerable_by_notification>false</triggerable_by_notification>
         <type>STANDARD</type>
         <variables/>
