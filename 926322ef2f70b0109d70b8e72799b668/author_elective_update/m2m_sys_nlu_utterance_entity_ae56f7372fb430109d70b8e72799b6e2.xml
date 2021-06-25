@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_nlu_utterance_entity">
+    <m2m_sys_nlu_utterance_entity action="DELETE">
+        <annotation>[{"start":27,"end":32,"annotatedString":"si richiede reset password {{phrase=\"bsales\"}}"}]</annotation>
+        <entity display_value="bsales">0e563b372fb430109d70b8e72799b606</entity>
+        <sys_class_name>m2m_sys_nlu_utterance_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 15:52:33</sys_created_on>
+        <sys_id>ae56f7372fb430109d70b8e72799b6e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bsales.si richiede reset password bsales</sys_name>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_update_name>m2m_sys_nlu_utterance_entity_ae56f7372fb430109d70b8e72799b6e2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 15:52:33</sys_updated_on>
+        <utterance display_value="si richiede reset password bsales">1e3b2f3f2f7430109d70b8e72799b6e0</utterance>
+    </m2m_sys_nlu_utterance_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</application>
+        <file_path/>
+        <instance_id>146db324db0ad7c0536ad5b0cf961985</instance_id>
+        <instance_name>dev58906</instance_name>
+        <name>m2m_sys_nlu_utterance_entity_ae56f7372fb430109d70b8e72799b6e2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_nlu_utterance_entity"><m2m_sys_nlu_utterance_entity action="INSERT_OR_UPDATE"><annotation>[{"start":27,"end":32,"annotatedString":"si richiede reset password {{phrase=\"bsales\"}}"}]</annotation><entity display_value="bsales">0e563b372fb430109d70b8e72799b606</entity><sys_class_name>m2m_sys_nlu_utterance_entity</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-24 15:52:33</sys_created_on><sys_id>ae56f7372fb430109d70b8e72799b6e2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bsales.si richiede reset password bsales</sys_name><sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package><sys_policy/><sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope><sys_update_name>m2m_sys_nlu_utterance_entity_ae56f7372fb430109d70b8e72799b6e2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-24 15:52:33</sys_updated_on><utterance display_value="si richiede reset password bsales">1e3b2f3f2f7430109d70b8e72799b6e0</utterance></m2m_sys_nlu_utterance_entity></record_update>]]></payload>
+        <payload_hash>-680724064</payload_hash>
+        <record_name>bsales.si richiede reset password bsales</record_name>
+        <reverted_from/>
+        <source>a8047b332fb430109d70b8e72799b671</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 15:52:33</sys_created_on>
+        <sys_id>2a56bb772fb430109d70b8e72799b6cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a3eb911a00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 15:52:33</sys_updated_on>
+        <type>NLU Utterance Entity</type>
+        <update_guid>6256bb77e1b43010c1c462e06ee2f1cb</update_guid>
+        <update_guid_history>6256bb77e1b43010c1c462e06ee2f1cb:-680724064</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="bsales.si richiede reset password bsales">4898fbf72fb430109d70b8e72799b64c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 16:02:13</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sys_nlu_utterance_entity">m2m_sys_nlu_utterance_entity</sys_db_object>
+        <sys_id>0cb9ad2d52ba46c2a259edbeace21c59</sys_id>
+        <sys_metadata>ae56f7372fb430109d70b8e72799b6e2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bsales.si richiede reset password bsales</sys_name>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_scope_delete display_value="">81791ef8ac214bce8dbc3e3d28a64964</sys_scope_delete>
+        <sys_update_name>m2m_sys_nlu_utterance_entity_ae56f7372fb430109d70b8e72799b6e2</sys_update_name>
+        <sys_update_version display_value="m2m_sys_nlu_utterance_entity_ae56f7372fb430109d70b8e72799b6e2">2a56bb772fb430109d70b8e72799b6cb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 16:02:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

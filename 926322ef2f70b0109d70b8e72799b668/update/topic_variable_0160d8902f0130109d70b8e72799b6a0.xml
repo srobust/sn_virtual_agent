@@ -39,10 +39,10 @@
         <limit/>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="scanner">1a65a6b72fb030109d70b8e72799b662</model>
-        <model_id>1a65a6b72fb030109d70b8e72799b662</model_id>
+        <model display_value="Reset Password - en">c160d8902f0130109d70b8e72799b69e</model>
+        <model_id>c160d8902f0130109d70b8e72799b69e</model_id>
         <model_table/>
-        <name>var__m_topic_variable_1a65a6b72fb030109d70b8e72799b662</name>
+        <name>var__m_topic_variable_c160d8902f0130109d70b8e72799b69e</name>
         <next_element/>
         <order>100</order>
         <primary>false</primary>
@@ -61,17 +61,17 @@
         <staged>false</staged>
         <sys_class_name>topic_variable</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-06-24 09:58:55</sys_created_on>
+        <sys_created_on>2021-06-25 12:24:49</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_id>d265a6b72fb030109d70b8e72799b663</sys_id>
+        <sys_id>0160d8902f0130109d70b8e72799b6a0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>User</sys_name>
         <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
         <sys_policy/>
         <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
-        <sys_update_name>topic_variable_d265a6b72fb030109d70b8e72799b663</sys_update_name>
+        <sys_update_name>topic_variable_0160d8902f0130109d70b8e72799b6a0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-24 09:58:55</sys_updated_on>
+        <sys_updated_on>2021-06-25 12:24:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -83,5 +83,5 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </topic_variable>
-    <sys_element_mapping action="delete_multiple" query="id=d265a6b72fb030109d70b8e72799b663"/>
+    <sys_element_mapping action="delete_multiple" query="id=0160d8902f0130109d70b8e72799b6a0"/>
 </record_update>
