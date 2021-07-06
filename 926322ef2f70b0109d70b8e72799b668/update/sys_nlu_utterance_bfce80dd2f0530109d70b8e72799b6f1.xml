@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_nlu_utterance">
+    <sys_nlu_utterance action="INSERT_OR_UPDATE">
+        <intent display_value="demo componenti">efbe889d2f0530109d70b8e72799b61d</intent>
+        <sys_class_name>sys_nlu_utterance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-28 14:51:49</sys_created_on>
+        <sys_id>bfce80dd2f0530109d70b8e72799b6f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>demo componenti</sys_name>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_update_name>sys_nlu_utterance_bfce80dd2f0530109d70b8e72799b6f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-28 14:51:49</sys_updated_on>
+        <utterance>demo componenti</utterance>
+    </sys_nlu_utterance>
+</record_update>

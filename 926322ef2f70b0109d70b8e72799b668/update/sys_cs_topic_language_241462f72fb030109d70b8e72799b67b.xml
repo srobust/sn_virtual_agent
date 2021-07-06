@@ -2,7 +2,7 @@
     <sys_cs_topic_language action="INSERT_OR_UPDATE">
         <cs_topic_id display_value="Pos">541462f72fb030109d70b8e72799b64a</cs_topic_id>
         <language_code>it</language_code>
-        <nlu_entities>[{"variable_name":"terminal_id","nlu_entity":"","nlu_entity_label":""}]</nlu_entities>
+        <nlu_entities>[{"variable_name":"terminal_id","nlu_entity":"","nlu_entity_label":""},{"variable_name":"v_book","nlu_entity":"","nlu_entity_label":""}]</nlu_entities>
         <nlu_intent>pos</nlu_intent>
         <nlu_intent_label>pos</nlu_intent_label>
         <nlu_model>ml_x_656484_x_656484_virtual_a_global_ed2676272ff0b0109d70b8e72799b6ea</nlu_model>
@@ -13,13 +13,13 @@
         <sys_created_on>2021-06-24 09:53:03</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>241462f72fb030109d70b8e72799b67b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
         <sys_policy/>
         <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
         <sys_update_name>sys_cs_topic_language_241462f72fb030109d70b8e72799b67b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-24 09:53:03</sys_updated_on>
+        <sys_updated_on>2021-06-28 14:22:24</sys_updated_on>
     </sys_cs_topic_language>
 </record_update>

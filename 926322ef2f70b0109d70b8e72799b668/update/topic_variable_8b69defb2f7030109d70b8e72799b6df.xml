@@ -34,7 +34,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Riferimento">reference</internal_type>
+        <internal_type display_value="Reference">reference</internal_type>
         <label>User</label>
         <limit/>
         <mandatory>false</mandatory>

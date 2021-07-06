@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_branding_setup">
+    <sys_cs_branding_setup action="INSERT_OR_UPDATE">
+        <agent_bubble_bg_color>#E9EDF1</agent_bubble_bg_color>
+        <agent_bubble_font_color>#343D47</agent_bubble_font_color>
+        <bg_color>#ffffff</bg_color>
+        <bot_bubble_bg_color>#E9EDF1</bot_bubble_bg_color>
+        <bot_bubble_font_color>#343D47</bot_bubble_font_color>
+        <branding_key>custom_brand</branding_key>
+        <branding_name>custom_brand</branding_name>
+        <bubble_bg_color>#006699</bubble_bg_color>
+        <bubble_font_color>#ffffff</bubble_font_color>
+        <button_bg_color>#ffffff</button_bg_color>
+        <category_bg_color>#efeff4</category_bg_color>
+        <category_font_color>#6d6d72</category_font_color>
+        <disabled_link_color>#666666</disabled_link_color>
+        <header_bg_color>#006699</header_bg_color>
+        <header_font_color>#ffffff</header_font_color>
+        <header_label>IBM Virtual Agent</header_label>
+        <input_bg_color>#fafafa</input_bg_color>
+        <link_color>#006699</link_color>
+        <load_animation_color>#293e40</load_animation_color>
+        <menu_icon_color>#ffffff</menu_icon_color>
+        <menu_title>Supporto Dealer</menu_title>
+        <msg_delay>500</msg_delay>
+        <notification_bg>#efeff4</notification_bg>
+        <notification_txt>#006699</notification_txt>
+        <seperator_color>#B8B8B8</seperator_color>
+        <sys_class_name>sys_cs_branding_setup</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-28 10:12:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1fbecb012f8130109d70b8e72799b642</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>custom_brand</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_update_name>sys_cs_branding_setup_1fbecb012f8130109d70b8e72799b642</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-28 10:16:48</sys_updated_on>
+        <system_message_color>#666666</system_message_color>
+        <timestamp_color>#767676</timestamp_color>
+        <type_presence_delay>1000</type_presence_delay>
+        <va_logo>f50fc7012f8130109d70b8e72799b66e</va_logo>
+        <va_profile/>
+    </sys_cs_branding_setup>
+</record_update>

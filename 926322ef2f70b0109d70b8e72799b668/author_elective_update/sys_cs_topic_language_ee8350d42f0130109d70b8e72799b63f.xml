@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language">
+    <sys_cs_topic_language action="DELETE">
+        <cs_topic_id display_value="Reset Password - en">de83dc942f0130109d70b8e72799b6f2</cs_topic_id>
+        <language_code>it</language_code>
+        <nlu_entities>[]</nlu_entities>
+        <nlu_intent>ResetPwd</nlu_intent>
+        <nlu_intent_label>ResetPwd</nlu_intent_label>
+        <nlu_model>ml_x_656484_x_656484_virtual_a_global_ed2676272ff0b0109d70b8e72799b6ea</nlu_model>
+        <nlu_model_label>va_ita</nlu_model_label>
+        <nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider>
+        <sys_class_name>sys_cs_topic_language</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-25 12:38:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>ee8350d42f0130109d70b8e72799b63f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_update_name>sys_cs_topic_language_ee8350d42f0130109d70b8e72799b63f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-25 12:38:33</sys_updated_on>
+    </sys_cs_topic_language>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</application>
+        <file_path/>
+        <instance_id>146db324db0ad7c0536ad5b0cf961985</instance_id>
+        <instance_name>dev58906</instance_name>
+        <name>sys_cs_topic_language_ee8350d42f0130109d70b8e72799b63f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language"><sys_cs_topic_language action="INSERT_OR_UPDATE"><cs_topic_id display_value="Reset Password - en">de83dc942f0130109d70b8e72799b6f2</cs_topic_id><language_code>it</language_code><nlu_entities>[]</nlu_entities><nlu_intent>ResetPwd</nlu_intent><nlu_intent_label>ResetPwd</nlu_intent_label><nlu_model>ml_x_656484_x_656484_virtual_a_global_ed2676272ff0b0109d70b8e72799b6ea</nlu_model><nlu_model_label>va_ita</nlu_model_label><nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider><sys_class_name>sys_cs_topic_language</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-25 12:38:33</sys_created_on><sys_domain>global</sys_domain><sys_id>ee8350d42f0130109d70b8e72799b63f</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package><sys_policy/><sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope><sys_update_name>sys_cs_topic_language_ee8350d42f0130109d70b8e72799b63f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-25 12:38:33</sys_updated_on></sys_cs_topic_language></record_update>]]></payload>
+        <payload_hash>913319701</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>a8047b332fb430109d70b8e72799b671</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-25 12:38:34</sys_created_on>
+        <sys_id>a68350d42f0130109d70b8e72799b641</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a432dd1050000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-25 12:38:34</sys_updated_on>
+        <type>Lingua argomento CS</type>
+        <update_guid>ee8350d4aa0130104db82f343f359540</update_guid>
+        <update_guid_history>ee8350d4aa0130104db82f343f359540:913319701</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-06-26 01:15:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_cs_topic_language">sys_cs_topic_language</sys_db_object>
+        <sys_id>98ad3b56c7904a55bc86f15ab2689051</sys_id>
+        <sys_metadata>ee8350d42f0130109d70b8e72799b63f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_scope_delete display_value="">81791ef8ac214bce8dbc3e3d28a64964</sys_scope_delete>
+        <sys_update_name>sys_cs_topic_language_ee8350d42f0130109d70b8e72799b63f</sys_update_name>
+        <sys_update_version display_value="sys_cs_topic_language_ee8350d42f0130109d70b8e72799b63f">a68350d42f0130109d70b8e72799b641</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-06-26 01:15:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <auto_resolution_enabled>false</auto_resolution_enabled>
+        <category>19b3ee632fb0b0109d70b8e72799b6fc</category>
+        <channels/>
+        <connect_queue/>
+        <description>demo componenti</description>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.31",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "b399dc81c8744f88ab9b15b6fcefb0bb": {
+          "id": "b399dc81c8744f88ab9b15b6fcefb0bb",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "6323512cdbe2431d8767491f1406dac4": {
+          "id": "6323512cdbe2431d8767491f1406dac4",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "d53b2d5ba84041ac838759d934284e03": {
+          "stepType": "ReferenceChoicePrompt",
+          "name": "elenco_tabella",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Seleziona il record nella lista di incident"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "d74976ed5b494efea641ad0ce7914a1c",
+          "id": "d53b2d5ba84041ac838759d934284e03",
+          "mode": "glide_record",
+          "script": "",
+          "metadataScript": "",
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Nessun record estratto"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "active=true"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "78e1fe4c9f1041d9913741e4eb4dab13": {
+          "id": "78e1fe4c9f1041d9913741e4eb4dab13",
+          "stepType": "Prompt",
+          "name": "richiesta_img",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Vuoi aggiungere un'immagine a questo incident?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "d8b60fb7429b4bf8b57b982970fe98e7"
+        },
+        "0060004dce9f4eb29db539116612a768": {
+          "id": "0060004dce9f4eb29db539116612a768",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "b30abd1add67482a9ebb1f41145dd395": {
+          "id": "b30abd1add67482a9ebb1f41145dd395",
+          "stepType": "Prompt",
+          "name": "upload_img",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Carica l'imagine da allegare all'incident"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "96722dc9fa2b4f5c8dffb6f7637f1654"
+        },
+        "a2452e3a7df042068f0c1699604240b3": {
+          "id": "a2452e3a7df042068f0c1699604240b3",
+          "stepType": "LinkOutput",
+          "name": "multilink",
+          "url": {
+            "mode": "simple",
+            "value": ""
+          },
+          "label": {
+            "mode": "simple",
+            "value": ""
+          },
+          "header": {
+            "mode": "simple",
+            "value": ""
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "multiple",
+          "introMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Di seguito alcuni link utili:"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "listOfLinks": "(function execute(header) {\n    //Return up to 3 links.  For example:\n\n       var groupedLinksOutMsg = new sn_cs.GroupedPartsOutMsg();\n       groupedLinksOutMsg.setHeader(header);\n       groupedLinksOutMsg.addLinkPart('Machine Learning', 'https://en.wikipedia.org/wiki/Machine_learning', 'Machine learning (ML) is the study of computer algorithms that improve automatically...', '');\n       groupedLinksOutMsg.addLinkPart('Latent Dirichelet Allocation', 'https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation', 'In natural language processing, the Latent Dirichlet Allocation (LDA) is a generative statistical model that allows sets of observations...', '');\n       return groupedLinksOutMsg;\n    \n})(header)\n"
+        }
+      },
+      "edges": [
+        {
+          "id": "dfe657e405b44aac8079443f2383df77",
+          "edgeType": "Edge",
+          "source": "b399dc81c8744f88ab9b15b6fcefb0bb",
+          "target": "d53b2d5ba84041ac838759d934284e03",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c4911f1054ab4b57b28298e3b86be45e",
+          "edgeType": "Edge",
+          "source": "d53b2d5ba84041ac838759d934284e03",
+          "target": "78e1fe4c9f1041d9913741e4eb4dab13",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "fb2bad4491ce40328686241f100ecba4",
+          "edgeType": "Edge",
+          "source": "78e1fe4c9f1041d9913741e4eb4dab13",
+          "target": "0060004dce9f4eb29db539116612a768",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "4d8e2ad0bc1a4fa0bbaaef10b0529fcc",
+          "edgeType": "Branch",
+          "source": "0060004dce9f4eb29db539116612a768",
+          "target": "6323512cdbe2431d8767491f1406dac4",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.richiesta_img=",
+            "mode": "query"
+          },
+          "label": "no"
+        },
+        {
+          "id": "b09d4c5864bf4e14b6aa1025b09016b1",
+          "edgeType": "Branch",
+          "source": "0060004dce9f4eb29db539116612a768",
+          "target": "b30abd1add67482a9ebb1f41145dd395",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.richiesta_img=true",
+            "mode": "query"
+          },
+          "label": "si"
+        },
+        {
+          "id": "dd4d239839ad44348abe0128bd156891",
+          "edgeType": "Edge",
+          "source": "b30abd1add67482a9ebb1f41145dd395",
+          "target": "a2452e3a7df042068f0c1699604240b3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "0ae6772cae004d30ad31bfb3205dd951",
+          "edgeType": "Edge",
+          "source": "a2452e3a7df042068f0c1699604240b3",
+          "target": "6323512cdbe2431d8767491f1406dac4",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "d74976ed5b494efea641ad0ce7914a1c": {
+      "id": "d74976ed5b494efea641ad0ce7914a1c",
+      "name": "elenco_tabella",
+      "label": "Elenco_tabella",
+      "varType": "reference",
+      "table": "incident",
+      "category": "vaInputs"
+    },
+    "d8b60fb7429b4bf8b57b982970fe98e7": {
+      "id": "d8b60fb7429b4bf8b57b982970fe98e7",
+      "name": "richiesta_img",
+      "label": "Richiesta_img",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs"
+    },
+    "96722dc9fa2b4f5c8dffb6f7637f1654": {
+      "id": "96722dc9fa2b4f5c8dffb6f7637f1654",
+      "name": "upload_img",
+      "label": "Upload_img",
+      "varType": "image",
+      "secure": false,
+      "category": "vaInputs"
+    }
+  }
+}</graph>
+        <key_phrases>demo componenti</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>demo componenti</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <roles/>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-28 14:33:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5cba04592f0530109d70b8e72799b674</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>demo componenti</sys_name>
+        <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
+        <sys_update_name>sys_cb_topic_5cba04592f0530109d70b8e72799b674</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-28 15:22:41</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=5cba04592f0530109d70b8e72799b674"/>
+</record_update>
