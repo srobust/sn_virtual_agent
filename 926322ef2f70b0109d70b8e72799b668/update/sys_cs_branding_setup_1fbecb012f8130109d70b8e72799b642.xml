@@ -30,7 +30,7 @@
         <sys_created_on>2021-06-28 10:12:25</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>1fbecb012f8130109d70b8e72799b642</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>custom_brand</sys_name>
         <sys_overrides/>
         <sys_package display_value="Virtual Agent" source="x_656484_virtual_a">926322ef2f70b0109d70b8e72799b668</sys_package>
@@ -38,11 +38,11 @@
         <sys_scope display_value="Virtual Agent">926322ef2f70b0109d70b8e72799b668</sys_scope>
         <sys_update_name>sys_cs_branding_setup_1fbecb012f8130109d70b8e72799b642</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-28 10:16:48</sys_updated_on>
+        <sys_updated_on>2021-07-13 09:40:42</sys_updated_on>
         <system_message_color>#666666</system_message_color>
         <timestamp_color>#767676</timestamp_color>
         <type_presence_delay>1000</type_presence_delay>
-        <va_logo>f50fc7012f8130109d70b8e72799b66e</va_logo>
+        <va_logo>9877988a2f9130109d70b8e72799b642</va_logo>
         <va_profile/>
     </sys_cs_branding_setup>
 </record_update>
